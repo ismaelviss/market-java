@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "16af840a-d9a9-47aa-b9d3-41ffaed18325",
+		"name": "market-java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "5853018"
+	},
+	"item": [
+		{
+			"name": "Get Products",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlc2FsdmF0aSIsImlhdCI6MTY1NzQ5Nzk3MiwiZXhwIjoxNjU3NTMzOTcyfQ.4s_3XDzF2RXVPqdez5f-AfYvjoWWIRXOVFlWOxfSSCI",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8090/market/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "Get a product",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlc2FsdmF0aSIsImlhdCI6MTY1NzQ5Nzk3MiwiZXhwIjoxNjU3NTMzOTcyfQ.4s_3XDzF2RXVPqdez5f-AfYvjoWWIRXOVFlWOxfSSCI",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8090/market/api/products/10"
+			},
+			"response": []
+		},
+		{
+			"name": "Get products by category",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlc2FsdmF0aSIsImlhdCI6MTY1NzQ5Nzk3MiwiZXhwIjoxNjU3NTMzOTcyfQ.4s_3XDzF2RXVPqdez5f-AfYvjoWWIRXOVFlWOxfSSCI",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8090/market/api/products/category/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Create product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlc2FsdmF0aSIsImlhdCI6MTY1NzQ5Nzk3MiwiZXhwIjoxNjU3NTMzOTcyfQ.4s_3XDzF2RXVPqdez5f-AfYvjoWWIRXOVFlWOxfSSCI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\": \"Lechuga\",\n        \"categoryId\": 1,\n        \"price\": 2000.0,\n        \"stock\": 60,\n        \"active\": true\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8090/market/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete product",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlc2FsdmF0aSIsImlhdCI6MTY1NzQ5Nzk3MiwiZXhwIjoxNjU3NTMzOTcyfQ.4s_3XDzF2RXVPqdez5f-AfYvjoWWIRXOVFlWOxfSSCI",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8090/market/api/products/51"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all purchases",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlc2FsdmF0aSIsImlhdCI6MTY1NzQ5Nzk3MiwiZXhwIjoxNjU3NTMzOTcyfQ.4s_3XDzF2RXVPqdez5f-AfYvjoWWIRXOVFlWOxfSSCI",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8090/market/api/purchases"
+			},
+			"response": []
+		},
+		{
+			"name": "Get purchases by client",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlc2FsdmF0aSIsImlhdCI6MTY1NzQ5Nzk3MiwiZXhwIjoxNjU3NTMzOTcyfQ.4s_3XDzF2RXVPqdez5f-AfYvjoWWIRXOVFlWOxfSSCI",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8090/market/api/purchases/client/4546221"
+			},
+			"response": []
+		},
+		{
+			"name": "Save purchase",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlc2FsdmF0aSIsImlhdCI6MTY1NzQ5Nzk3MiwiZXhwIjoxNjU3NTMzOTcyfQ.4s_3XDzF2RXVPqdez5f-AfYvjoWWIRXOVFlWOxfSSCI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"clientId\": \"4546221\",\n        \"date\": \"2000-12-31T13:40:00\",\n        \"paymentMethod\": \"E\",\n        \"comment\": \"\",\n        \"state\": \"P\",\n        \"items\": [\n            {\n                \"productId\": 1,\n                \"quantity\": 10,\n                \"total\": 3000.0,\n                \"active\": true\n            },\n            {\n                \"productId\": 3,\n                \"quantity\": 20,\n                \"total\": 14000.0,\n                \"active\": true\n            }\n        ]\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8090/market/api/purchases"
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"esalvati\",\n    \"password\": \"esalvati\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8090/market/api/auth/authenticate"
+			},
+			"response": []
+		}
+	]
+}

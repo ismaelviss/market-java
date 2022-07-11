@@ -1,0 +1,1 @@
+web: java -jar -Dspring.profiles.active=pdn build/libs/market-java-1.0.jar
